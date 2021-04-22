@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script defer src="/__/firebase/8.4.1/firebase-app.js"></script>
+  <script defer src="/__/firebase/8.4.1/firebase-auth.js"></script>
+  <script defer src="/__/firebase/8.4.1/firebase-firestore.js"></script>
+  <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Rideinway</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="request.html"><span class="glyphicon glyphicon-search"></span>Request</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-user" onclick="logOut()"></span>Logout</a></li>
+      <!-- <button href="#" class="btn btn-primary" onclick="logOut()">Logout</button> -->
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <input type="text" name="From" id="from" class="form-control" placeholder="From" required autofocus>
+  <input type="text" name="To" id="to" class="form-control" placeholder="To" required>
+  <input type="date" name="Date" id="date" class="form-control" placeholder="Date" required>
+  <input type="text" name="Time" id="time" class="form-control" placeholder="Time" required>
+  <button class="btn btn-primary" onclick="pRide()">Post Ride</button>
+  <script type="text/javascript" src="home.js"> </script>
+  <script type="text/javascript" src="request.js"> </script>
+</div>
+
+</body>
+</html>

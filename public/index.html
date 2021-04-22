@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
       <meta charset="utf-8">
-      <title>Signup</title>
+      <title>Signin</title>
       <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sign-in/">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -13,15 +13,13 @@
       <script defer src="/__/firebase/init.js?useEmulator=true"></script>
   </head>
   <body class="text-center">
-    <form action="/" class="form-signin"method="POST">
+    <div class="form-signin">
       <h1 class="h3 mb-3 font-weight-normal"></h1>
-      <input type="text" name="fName" class="form-control top" placeholder="First Name" required autofocus>
-      <input type="text" name="lName" class="form-control middle" placeholder="Last Name" required>
-      <input type="email" name="email" class="form-control middle" placeholder="Email" required>
-      <input type="number" name="mobile" class="form-control middle" placeholder="Mobile No" required autofocus>
-      <input type="text" name="password" class="form-control middle" placeholder="Password" required>
-      <input type="text" name="repassword" class="form-control bottom" placeholder="Repassword" required>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
-    </form>
+      <input type="email" name="email" id="email"class="form-control top" placeholder="Username" required>
+      <input type="mobile" name="Password" id="pwd"class="form-control middle" placeholder="Password" required>
+      <button class="btn btn-lg btn-primary btn-block" onclick="signIn()">Login</button>
+      <p><a href="">Forgot Password</a>    <a href="signup.html">Need an account Signup</a></p>
+      <script type="text/javascript" src="signin.js"> </script>
+    </div>
   </body>
 </html>
