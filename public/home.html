@@ -20,9 +20,10 @@
       <a class="navbar-brand" href="#">Rideinway</a>
     </div>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="request.html"><span class="glyphicon glyphicon-search"></span>Request</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-user" onclick="logOut()"></span>Logout</a></li>
-      <!-- <button href="#" class="btn btn-primary" onclick="logOut()">Logout</button> -->
+      <li><a href="home.html"><span class="glyphicon glyphicon"></span>Home</a></li>
+      <li><a href="request.html"><span class="glyphicon glyphicon"></span>Request</a></li>
+      <li><a href="accept.html"><span class="glyphicon glyphicon"></span>Accept</a></li>
+      <li><a href="index.html"><span class="glyphicon glyphicon-user" onclick="logOut()"></span>Logout</a></li>
     </ul>
   </div>
 </nav>
@@ -31,7 +32,7 @@
   <input type="text" name="From" id="from" class="form-control" placeholder="From" required autofocus>
   <input type="text" name="To" id="to" class="form-control" placeholder="To" required>
   <input type="date" name="Date" id="date" class="form-control" placeholder="Date" required>
-  <input type="text" name="Time" id="time" class="form-control" placeholder="Time" required>
+  <input type="time" name="Time" id="time" class="form-control" placeholder="Time" required>
   <button class="btn btn-primary" onclick="pRide()">Post Ride</button>
   <script type="text/javascript" src="home.js"> </script>
   <script type="text/javascript" src="request.js"> </script>
