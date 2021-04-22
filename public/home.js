@@ -10,8 +10,8 @@ async function pRide() {
   let date = dateElement.value
   let time = timeElement.value
   console.log(from, to, date, time)
-
-  await firebase.firestore().collection("booking").add({from, to, date, time})
+  let ref = firebase.firestore().collection("bookings").doc()
+  await ref.set({from, to, date, time, uid:ref.id})
   alert ("ride added")
 
   fromElement.value = ''
