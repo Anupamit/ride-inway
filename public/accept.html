@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Request</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+  <script defer src="/__/firebase/8.4.1/firebase-app.js"></script>
+  <script defer src="/__/firebase/8.4.1/firebase-auth.js"></script>
+  <script defer src="/__/firebase/8.4.1/firebase-firestore.js"></script>
+  <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Rideinway</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="home.html"><span class="glyphicon glyphicon"></span>Home</a></li>
+        <li><a href="request.html"><span class="glyphicon glyphicon"></span>Request</a></li>
+        <li><a href="accept.html"><span class="glyphicon glyphicon"></span>Accept</a></li>
+        <li><a href="index.html"><span class="glyphicon glyphicon-user" onclick="logOut()"></span>Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<div class="container">
+  <input type="search" name="From" id="from" class="form-control" placeholder="From" required autofocus>
+  <input type="search" name="To" id="to" class="form-control" placeholder="To" required>
+  <button class="btn btn-primary" onclick="searchRide()">Search Ride</button>
+  <div id="ridesavailable" class="">
+
+  </div>
+  <script type="text/javascript" src="accept.js"> </script>
+</div>
+
+</body>
+</html>
