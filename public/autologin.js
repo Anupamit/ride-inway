@@ -1,4 +1,5 @@
 firebase.auth().onAuthStateChanged(async (user)=>{
+  console.log("user", user)
   if(user && (location.pathname == '/index.html' || location.pathname == '/')){
     window.location.href ="home.html";
   }else if(!user && !( location.pathname == '/' || location.pathname == '/index.html')){
